@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.2//EN"
+"http://www.wapforum.org/DTD/wml12.dtd">
+
+<wml>
+<card id="contact" title="contact">
+<p align="left"><b>RDJ Airlines<br>
+<img src="images/call.jpg" height=25 width=25></img>contact no:8124576060<br></p>
+<p align="center"><a href="home.wml"><img src="images/home2.jpg" height=50 width=50></img></a></p><br><br>
+<p align="center">contact us on:<a href="http://www.facebook.com"><img src="images/fb.jpg" height=50 width=50></a><a href="http://www.twitter.com"><img src="images/tweet.jpg" height=50 width=50></img></a><a href="http://www.youtube.com"><img src="images/youtube.jpg" height=50 width=50></img></a></p>
+</card>
+</wml>
+
+

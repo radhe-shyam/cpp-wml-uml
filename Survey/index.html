@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<title>Feedback</title>
+<style>
+#det{
+	border:solid 1px red;
+	text-align:center;
+	width:200px;
+	padding:5px 5px 5px 5px;
+}
+</style>
+<script>
+function getParameterByName(name) 
+{
+	    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+   	 	var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    	return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+function show()
+{document.write(getParameterByName('r'))}
+</script>
+</head>
+<body>
+<section>
+<div id="det">
+	<form action=".\quest.html" method="get">
+	<h1>Faculty Detail</h1>
+    <script>document.write("<input type=\"hidden\" name=\"r\" value=\"" + getParameterByName('r') + "\"/>")</script>
+	Name : <input type="text" name="name"/><br>
+    cabin no : <input type="text" name="cno"/>
+    <input type="submit"/>
+    </form>
+</div>
+	<input type="button" value="click" onClick="show()" />
+</section>
+</body>
+</html>

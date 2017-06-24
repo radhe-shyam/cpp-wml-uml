@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.2//EN"
+"http://www.wapforum.org/DTD/wml12.dtd">
+
+<wml>
+<card id="gallery" title="gallery">
+<br><br><br><br><br>
+<a href="gallery2.wml"><img src="images/back.jpg" height=50 width=50></img></a><img src="images/flight3.jpg" height=250 width=1250></img><a href="gallery4.wml"><img src="images/next.jpg" height=50 width=50></img></a>
+<br><br>
+<br>
+<p align="center"><a href="home.wml"><img src="images/home1.jpg" height=100 width=100></p></a></img>
+</card>
+</wml>

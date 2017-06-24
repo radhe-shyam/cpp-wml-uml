@@ -1,0 +1,133 @@
+
+
+
+
+
+
+
+
+
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN"
+"http://www.wapforum.org/DTD/wml_1.1.xml">
+
+<wml>
+<card id="cancel" title="cancellation">
+<table color="red">
+<tr>
+<td>
+<p>Name:</p>
+</td>
+<td>
+<input name="na" />
+</td>
+</tr>
+<tr>
+<td>
+<p>Date of journey:</p>
+</td>
+<td>
+<select name="da">
+<option value="1">1</option>
+<option value="2" >2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+</select></td>
+<td>
+<select name="mo">
+<option value="january">January</option>
+<option value="february">February</option>
+<option value="march">March</option>
+<option value="april">April</option>
+<option value="may">May</option>
+<option value="june">June</option>
+<option value="july">July</option>
+<option value="august">August</option>
+<option value="septemeber">September</option>
+<option value="october">October</option>
+<option value="november">November</option>
+<option value="december">December</option>
+</select>
+</td>
+<td>
+<select name="ye">
+<option value="2014">2014</option>
+<option value="2015">2015</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>
+<p>From:</p>
+</td>
+<td>
+<select name="fr">
+<option value="chennai">chennai</option>
+<option value="mumbai">mumbai</option>
+<option value="delhi">Delhi</option>
+<option value="kolkatta">Kolkatta</option>
+<option value="Bangalore">Bangalore</option>
+<option value="Hyderabad">Hyderabad</option>
+</select>
+</td>
+<td>
+<p>To:</p>
+</td>
+<td>
+<select name="t">
+<option value="chennai">chennai</option>
+<option value="mumbai">mumbai</option>
+<option value="delhi">Delhi</option>
+<option value="kolkatta">Kolkatta</option>
+<option value="Bangalore">Bangalore</option>
+<option value="Hyderabad">Hyderabad</option>
+</select>
+</td>
+</tr>
+</table>
+<p align="center">
+<anchor>
+CANCEL
+<go method="get" href="http://localhost/project/cancellation.php">
+<postfield name="na" value="$(na)" />
+<postfield name="da" value="$(da)" />
+
+<postfield name="mo" value="$(mo)" />
+
+<postfield name="ye" value="$(ye)" />
+
+<postfield name="fr" value="$(fr)" />
+
+<postfield name="t" value="$(t)" />
+
+</go>
+</anchor>
+</p>
+</card>
+</wml>

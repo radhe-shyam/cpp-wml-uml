@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Feedback</title>
+<style media="all">
+body{
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-style:oblique;
+	text-align:center;
+	color:rgba(255,102,0,.7);
+}
+#quest{
+	padding:20px;
+	margin:3px 3px 3px 30px;
+	text-align:left;
+	font-size:60px;
+}
+li{
+	background-color:rgba(255,255,255,.5);
+	font-weight:bold;
+
+	border-radius:5px;
+	padding:20px;
+	max-width:900px;
+	margin:3px 3px 3px 3px;
+	font-size:50px;
+}
+li:hover{
+	-webkit-box-shadow:rgb(0,255,255) 0px 0px 40px;
+	background-color:rgba(255,255,255,1);
+}
+#subbut{
+	border-radius:25px;
+	text-align:center;
+	font-size:50px;
+	font-weight:bold;
+	max-width:900px;
+	margin:30px 30px 30px 0px;
+	padding:20px;
+	background:-webkit-radial-gradient(center,ellipse, rgba(102,102,102,0) 70%, rgba(255,102,0,.7) 100%);
+	-webkit-box-shadow:rgb(255,255,255) 0px 0px 40px;
+}
+#subbut:hover{
+	background-color:rgba(255,255,255,1);
+	-webkit-box-shadow:rgb(0,255,255) 0px 0px 40px;
+}
+</style>
+<script>
+var uch;
+var str;
+var choice;
+function rdj(element,r)
+{
+	choice = r;
+	if(uch)
+	uch.innerHTML = str;
+	str = element.innerHTML;
+	uch = element;
+	document.getElementById('subbut').innerHTML = "<marquee behavior=\"alternate\">Tap here to submit your feedback</marquee>";
+	element.innerHTML += "&nbsp;&nbsp;&nbsp;<img src=\".\\check.png\" ></img>";
+	document.getElementById('res').value = element.value;
+}
+function getParameterByName(name) 
+{
+	    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+   	 	var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    	return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+function store()
+{
+		if(choice != null)
+		{
+		var str =getParameterByName('r') + getParameterByName('name') + choice + getParameterByName('cno') + "<br>";
+		document.write("<center><a href=\".\\index.html?r=" + str + "\"><img src=\".\\thanx.png\" ></img></a></center>");
+		}
+}
+</script>
+</head>
+<body bgcolor="#666666">
+	<div id="quest">
+    <hr>
+	<h2><center>FEEDBACK</center></h2>
+    <hr>
+	<h1>In your daily hectic life, do you have time to go for shopping..?</h1>
+	</div>
+
+    <div id="answer">
+        <ul type="none">
+            <li id="a1" onClick="rdj(this,1)"><label>Yes, always</label></li>
+            <li id="a2" onClick="rdj(this,2)"><label>Sometimes when I make myself free</label></li>
+            <li id="a3" onClick="rdj(this,3)"><label>Prefer not to go by myself</label></li>
+            <li id="a4" onClick="rdj(this,4)"><label>Rarely</label></li>
+            <li id="a5" onClick="rdj(this,5)"><label>Never</label></li>
+            <div id="subbut" onClick="store()"><marquee behavior="alternate">Tap on your option</marquee></div>
+        </ul>
+	</div>
+</body>
+</html>

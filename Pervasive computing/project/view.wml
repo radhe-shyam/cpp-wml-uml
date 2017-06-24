@@ -1,0 +1,20 @@
+<?php echo 'Content-type: text/vnd.wap.wml'; ?>
+<?php echo '<?xml version="1.0"?'.'>'; ?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.2//EN"
+"http://www.wapforum.org/DTD/wml12.dtd">
+
+<wml>
+<card id="reservation" title="rese">
+<p>
+<?php
+$con=mysql_connect("localhost","root","") or die("Error in connection");
+mysql_select_db("airline",$con) or die("Error in connection");
+$query="select * from reserve";
+mysql_query($query,$con) or die ("Error occured");
+echo "selected successfully";
+mysql_close($con);
+}
+?>
+</p>
+</card>
+</wml>

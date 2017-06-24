@@ -1,0 +1,48 @@
+
+
+
+
+
+
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.2//EN"
+"http://www.wapforum.org/DTD/wml12.dtd">
+
+<wml>
+<card id="home" title="homepage" bgcolor="black">
+<p align="center"><b><strong><u>VIT AIRLINES</u></strong></b></p> <br>
+<br<br>
+<img src="images/flight3.jpg" alt="thumb" height=400 width=1500></img>
+<br>
+<br>
+<br>
+<table border=1 cellpadding=10 cellspacing=10 bgcolor="yellow">
+<tr>
+<td><b><a href="home.wml">Home</a></b></td>
+<td><b><a href="reserve.wml">Reserve flight</a></b></td>
+<td><b><a href="gallery.wml">Gallery</a></b></td>
+<td><b><a href="contactus.wml">Contact us</a></b></td>
+<td><b><a href="admin.wml">admin</a></b></td>
+<td><b><a href="cancel.wml">cancel</a></b></td>
+</tr>
+</table>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<img src="images/flight1.jpg" alt="alt" align="left" height=200 width=500></img>
+<p><h1>All the travelers around the world are traveling frequently for a vacation ,business trip , corporate meetings ,exploring variety of places , meeting relatives and various other things. But the reason may be different but all should know the procedure of online flight reservation as there is no middle man involved and there are no extra charges for air flight reservation. It is the simplest way to grab the best deals as you have the choice to compare the deals with other websites. By getting the flight ticket reservation you not only hit upon the right kind of offer but also save a lots of money by being sensible.<br>
+
+Air travel is flourishing at an astonishing rate and so is the flight reservation India .A person who wishes to take off to his destination has wide extended opportunities to choose from. No matter to which part of the country or world you want to travel the flight reservation can be done in moment sitting from the convenience of home or office with just a click of a mouse.<br>
+
+Make your holiday an amazing experience by grabbing domestic flight reservation across the country at throw away prices and that too without standing in lengthy queues at the booking counters. With number of travel portals at your service chart out a vacation with your dear ones to a destination that was actually your dream.<br>
+
+How to Make a Flight Reservation?<br>
+There are many ways that helps you in making flight reservations on the net. You can make use of number of travel sites to find out what prices are obtainable for your tour itinerary. Some of the travel websites will allow you to choose the fare you are eager to shell out and then help you find the tickets for that price. To have the flight reservation you can also contact the airlines directly. The advent of contemporary technology has made flight reservation a cakewalk. It has made the method of air travel very easy and less costly for all the people.<br></h1></p><br><br><br><br>
+<p align="center"><b>copyrights@VIT airlines,2014</b></p>
+
+
+</card>
+</wml>

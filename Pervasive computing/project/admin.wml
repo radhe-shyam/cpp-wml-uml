@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN"
+"http://www.wapforum.org/DTD/wml_1.1.xml">
+
+<wml>
+<card id="reserve" title="reservation">
+<table color="red">
+<tr>
+<td>
+<p>User Name:</p>
+</td>
+<td>
+<input name="uname" />
+</td>
+</tr>
+<tr>
+<td>
+<p>Password:</p>
+</td>
+<td>
+<input name="pwd" />
+</td>
+</tr>
+</table>
+<p align="center">
+<anchor>
+LOGIN
+<go method="get" href="http://localhost/project/view.php">
+<postfield name="uname" value="$(uname)" />
+<postfield name="pwd" value="$(pwd)" />
+</go>
+</anchor>
+</p>
+</card>
+</wml>
